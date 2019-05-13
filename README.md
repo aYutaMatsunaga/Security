@@ -93,3 +93,7 @@ decrypt
 ## XSS攻撃
 - 攻撃者のスクリプトを脆弱性のあるページで走らせる
 - GET/POSTメソッドでも可能
+
+# C言語
+スタックプロテクターを外して実行  
+```gcc -fno-stack-protector -D_FORTIFY_SOURCE=0 -o alice_bob_1 alice_bob_1.c```  
